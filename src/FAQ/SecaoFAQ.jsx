@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import styles from './SecaoFAQ.module.css';
 
-function Secao_FAQ() {
+function SecaoFAQ() {
     const [faqs, setFaqs] = useState([]);
 
     useEffect(() => {
         fetch('https://isabelaqm.github.io/json-files/faq.json')
-            //fetch('/faq.json')
+        //fetch('/faq.json')
             .then(file => file.json())
             .then(info => setFaqs(info.faqs))
             .catch(error => console.error('Erro ao carregar o JSON:', error));
@@ -27,22 +27,22 @@ function Secao_FAQ() {
 
     return (
         <section className={styles.secao_FAQ}>
-            <div id='faq'>
-                <div className={styles.containerFAQ}>
-                    <h2 className={styles.subtituloFaq}>Tem alguma dúvida?</h2>
-                    <h2 className={styles.subtituloFaq}>A gente te ajuda</h2>
-                    <p className={styles.paragrafo}>Separamos aqui as dúvidas mais
-                        comuns sobre as nossas unidades para
-                        que você possa se manter informado!</p>
-                </div>
-
-                <div className={styles.perguntas}>
-                    {getPerguntas()}
-                </div>
+            <div className={styles.cabecalhoFAQ}>
+            <div className={styles.containerFAQ}>
+				<h2 className={styles.subtituloFAQ}>Tem alguma dúvida?</h2>
+                <h2 className={styles.subtituloFAQ}>A gente te ajuda</h2>
+				<p className={styles.paragrafoFAQ}>Separamos aqui as dúvidas mais
+comuns sobre as nossas unidades para
+que você possa se manter informado!</p>
             </div>
-
+            </div>
+			
+            <div className={styles.perguntas}>
+            {getPerguntas()}
+            </div>
+           
         </section>
     );
 }
 
-export default Secao_FAQ;
+export default SecaoFAQ;
