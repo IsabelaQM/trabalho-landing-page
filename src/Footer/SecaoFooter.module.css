@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.descricaoLateral {
+    display: flex;
+    flex-direction: column;
+}
+
+.descricaoLateral img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.descricaoLateral p {
+    width: 200px;
+}
+
+.infoMatriz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoMatriz .contatos {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.infoMatriz>p {
+    font-weight: bold;
+    color: #F5841E;
+    margin-bottom: 20px;
+}
+
+.infoMatriz ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 90%;
+}
+
+.infoMatriz li {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.infoMatriz li img,
+.infoMatriz .contatos img {
+    width: 1.5em;
+    object-fit: contain;
+}
+
+.infoMatriz li p {
+    margin-left: 10px;
+}
+
+.navLateral li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.navLateral {
+    border-left: 2px solid #F5841E;
+    padding-left: 25px;
+}
+
+.navLateral a:link,
+.navLateral a:visited {
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+
+.navLateral a:hover {
+    color: #3B8B61;
+}

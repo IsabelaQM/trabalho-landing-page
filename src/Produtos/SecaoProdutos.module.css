@@ -1,0 +1,77 @@
+.secaoProdutos {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.secaoProdutos > div{
+    width: 1200px;
+}
+
+.secaoProdutos > div > h2{
+    font-size: 2.4em;
+    color: #F7931E;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2.5em;
+    margin-bottom: 0.3em;
+}
+
+.carouselContent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.carouselImage{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1.2em;
+    margin-right: 3em;
+    padding-left: 1.2em;
+}
+
+.carouselText{
+    text-align: left;
+    width: 60em;
+    height: 30em;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    padding-right: 1.2em;
+}
+
+.carouselText h3{
+    font-size: 1.9em;
+    color: #00A54F;
+    padding-bottom: 0.em;
+    font-weight: 550;
+}
+
+.carouselText h5{
+    font-size: 1.3em;
+    color: #7D7D7D;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+
+.carouselText p{
+    font-size: 1.3em;
+    color: #333;
+    font-weight: 500;
+    text-align: justify;
+}
+

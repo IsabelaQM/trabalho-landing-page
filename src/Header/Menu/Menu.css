@@ -1,0 +1,37 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu nav{
+    width: 50em;
+}
+
+.menu nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu li, .menu li > a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li > a{
+    font-size: 1.5em;
+    color: #00A54F;
+    font-weight: 650;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
+    transition: color 0.3s ease;
+}
+
+.menu a:hover{
+    color: #106b33;
+} 
+
+.imgLogo {
+    width: 140px;
+}

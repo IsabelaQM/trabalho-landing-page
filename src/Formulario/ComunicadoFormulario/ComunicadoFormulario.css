@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+.comunicadoFormulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.comunicadoFormulario h1, .comunicadoFormulario {
+    color: #FFFFFF;
+}
+
+.comunicadoFormulario h1{
+    font-size: 3em;
+}
+
+.comunicadoFormulario p{
+    width: 600px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.comunicadoFormulario span{
+    font-weight: 600;
+}

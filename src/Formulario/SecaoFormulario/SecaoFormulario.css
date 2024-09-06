@@ -1,0 +1,21 @@
+
+.section-formulario-background {
+    width: 100%;
+    background-image: url('../../assets/img/backgroundFormulario.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 0px;
+   padding: 0px;
+   justify-content: center;
+}
+
+.section-formulario-background div{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+

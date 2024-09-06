@@ -1,0 +1,26 @@
+.botoes{
+    display: flex;
+    width: 100%;
+}
+
+.botoes a{
+    padding: 0.8em 3em;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #00A650;
+    border-radius: 0.8em;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-right: 1.2em;
+    letter-spacing: 0.07em;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 2.5em;
+}
+
+.botoes a:hover {
+    background-color: #106b33;
+    color: #FFFFFF;
+} 

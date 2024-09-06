@@ -1,0 +1,81 @@
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    height: 50em;
+    width: 35em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2em;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+label{
+    font-size: 1.4em;
+    position: relative;
+    right: 6.8em;
+    padding-bottom: 0.5em;
+    width: 5em;
+}
+
+input{
+    padding: 1em;
+    width: 35em;
+    border-radius: 2em;
+    position: relative;
+    margin-bottom: 2em;
+    border: none;
+    outline: none;
+}
+
+.assunto{
+    padding-bottom: 8em;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: #999; 
+    font-size: 1.1em;
+}
+
+.btn-enviar {
+    background-color: #4CAF50; /* Cor de fundo inicial */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 1.4em;
+    width: 18em;
+    padding: 0.7em;
+}
+
+.btn-enviar:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+form > p{
+    width: 20em;
+    font-size: 1.1em;
+    border-radius: 0.7em;
+    text-align: center;
+}
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+.error {
+    background-color: red;
+    color: white;
+}
+
+.placeholder-message {
+    min-height: 2.4em; /* Ajuste a altura conforme necessário */
+}
