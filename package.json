@@ -1,6 +1,6 @@
 {
-  "homepage": "https://https://isabelaqm.github.io/trabalho-landing-page/",
-  "name": "projetofinal",
+  "homepage": "https://https://isabelaqm.github.io/landing-page-reponsiva",
+  "name": "responsiva",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -19,6 +19,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-input-mask": "^2.0.4",
+    "responsiva": "file:",
     "swiper": "^11.1.11"
   },
   "devDependencies": {

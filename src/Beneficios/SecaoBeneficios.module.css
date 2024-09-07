@@ -1,134 +1,220 @@
 .secaoBeneficios {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-image: url('../assets/img/fundo_degrade.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    height: 1000px;
-    padding: 20px 100px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("../assets/img/fundo_degrade.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 1000px;
+  padding: 20px 100px;
+  width: 100%;
 }
 
-.secaoBeneficios>div {
-    width: 1400px;
+.secaoBeneficios > div {
+  width: 1200px;
 }
 
 .beneficio.invertido {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
-.tituloSecao {
-    text-align: center;
-    margin-top: 3em;
-    color: #00A54F;
-    font-size: 2.4em;
-    font-weight: 550;
-    text-transform: uppercase;
-    margin-bottom: 1.8em;
+.tituloBeneficios {
+  text-align: center;
+  margin-top: 3em;
+  color: #00a54f;
+  font-size: 2.4em;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin-bottom: 1.8em;
 }
 
 .beneficio {
-    display: flex;
-    margin-bottom: 5em;
+  display: flex;
+  margin-bottom: 5em;
 }
 
-
-.texto {
-    color: #00A54F;
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.textoBeneficios {
+  color: #00a54f;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.texto>h2 {
-    font-size: 1.5em;
-    color: #00A54F;
-    font-weight: 550;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
+.textoBeneficios > h2 {
+  font-size: 1.5em;
+  color: #00a54f;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
 }
 
-.texto>h3 {
-    font-size: 1.2em;
-    color: #727775;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 1em;
-    text-transform: uppercase;
+.textoBeneficios > h3 {
+  font-size: 1.2em;
+  color: #727775;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
-.texto>p {
-    font-size: 1.2em;
-    color: #333;
-    font-weight: 500;
+.textoBeneficios > p {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 500;
 }
 
-.beneficio1 .texto {
-    text-align: right;
-    margin-right: 5em;
+.beneficio1 .textoBeneficios {
+  text-align: right;
+  margin-right: 5em;
 }
 
-.beneficio2 .texto {
-    text-align: left;
-    margin-left: 5em;
+.beneficio2 .textoBeneficios {
+  text-align: left;
+  margin-left: 5em;
 }
 
-.beneficio2 .texto h2 {
-    color: #E77D1D;
+.beneficio2 .textoBeneficios h2 {
+  color: #e77d1d;
 }
 
-.imagem {
+.imagemBeneficios {
+  height: auto;
+  width: 32em;
+}
+
+@media screen and (max-width: 760px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .secaoBeneficios {
+    padding: 20px;
+    background-color: #eafff2;
+    background-image: none;
+    background-size: cover;
+    background-position: bottom;
     height: auto;
-    width: 32em;
+    width: 100%;
+  }
+
+  .secaoBeneficios > div {
+    width: 100%;
+  }
+
+  .beneficio,
+  .beneficio.invertido {
+    flex-direction: column;
+  }
+
+  .beneficio1 .textoBeneficios,
+  .beneficio2 .textoBeneficios {
+    text-align: justify;
+    margin: 0;
+  }
+
+  .imagemBeneficios {
+    height: auto;
+    transform: scale(0.9);
+    width: 20em;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .textoBeneficios {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  /* .containerBeneficios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: auto;
+    } */
+
+  .containerBeneficios {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin: auto;
+  }
+
+  .containerBeneficios > img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .secaoBeneficios > img {
+    text-align: center;
+  }
+
+  .tituloBeneficios {
+    font-size: 1.8em;
+    margin-top: 2em;
+  }
+
+  .textoBeneficios > h2 {
+    font-size: 1.2em;
+  }
+
+  .beneficio {
+    margin-bottom: 2em;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1280px) {
+  .secaoBeneficios {
+    padding: 20px;
+    background-color: #eafff2;
+    background-image: none;
+    background-size: cover;
+    background-position: bottom;
+    height: auto;
+    width: 100%;
+  }
+  .secaoBeneficios > div {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    .secaoBeneficios {
-        padding: 20px;
-        background-color: #EAFFF2;
-        background-image: none;
-        background-size: cover;
-        background-position: bottom;
-        height: auto;
-        width: 100%;
-    }
+  .tituloBeneficios {
+    font-size: 2em;
+    margin-top: 2em;
+  }
 
-    .secaoBeneficios>div {
-        width: 100%;
-    }
+  .subtituloBeneficios {
+    font-size: 1em;
+  }
 
-    .beneficio, .beneficio.invertido {
-        flex-direction: column;
-    }
+  .textoBeneficios > p {
+    font-size: 0.8em;
+  }
 
-    .beneficio1 .texto , .beneficio2 .texto {
-        text-align: center;
-        margin: 0;
-    }
+  .textoBeneficios > h2 {
+    font-size: 1em;
+  }
 
-    .imagem {
-        width: 100%;
-    }
-
-    .texto{
-        text-align: center;
-        font-size: 15px;
-    }
-
-
+  .imagemBeneficios {
+    height: auto;
+    width: 20em;
+    display: block;
+    margin: 0 auto;
+  }
 }

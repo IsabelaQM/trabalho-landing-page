@@ -1,4 +1,3 @@
-import React from 'react';
 import Beneficios from './Beneficios';
 import styles from './SecaoBeneficios.module.css'; // Importar estilos da seção
 
@@ -10,7 +9,7 @@ const Secao_Beneficios = () => {
     return (
         <section className={styles.secaoBeneficios}>
             <div id='beneficios'>
-                <h2 className={styles.tituloSecao}>Benefícios</h2>
+                <h2 className={styles.tituloBeneficios}>Benefícios</h2>
                 <div className={styles.containerBeneficios}>
                     <div className={styles.beneficio1}>
                         <Beneficios

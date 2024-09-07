@@ -1,60 +1,3 @@
-/* .secao_FAQ {
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  line-height: 1.25;
-  justify-content: center;
-  margin-bottom: 3em;
-}
-
-.secao_FAQ .faq {
-  width: 1200px;
-  margin-bottom: 4em;
-}
-
-.subtituloFaq {
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 2em;
-  width: 50%;
-  font-weight: 660;
-  position: relative;
-  left: 3.5em;
-}
-
-.perguntas {
-  width: 1200px;
-  text-align: center;
-  margin: auto;
-}
-
-.paragrafo {
-  padding-top: 10px;
-  font-size: 1.4em;
-  text-align: left;
-  width: 55%;
-  font-weight: 500;
-  position: relative;
-  left: 5em;
-}
-
-.containerFAQ {
-  background-image: url('../assets/img/fundo_laranja_menor.png');
-  background-size: cover;
-  background-position: bottom;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #c86710;
-  margin-bottom: 3em;
-} */
-
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
@@ -161,88 +104,22 @@
   padding-top: 15px;
 }
 
-/* @media screen and (max-width: 480px) {
-  .secao_FAQ {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-  }
-
-  .containerFAQ {
-    height: 250px;
-    margin: auto;
-    background-image: none;
-    background-color: #ffe1c6;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    color: #c86710;
-    margin-bottom: 3em;
-  }
-
-  .perguntas {
-    width: 80%;
-    text-align: center;
-    margin: auto;
-  }
-
-  .subtituloFaq {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 600;
-  }
-
-  .paragrafoFAQ {
-    padding: 10px;
-    font-size: 0.8em;
-    text-align: center;
-    font-weight: 500;
-    left: 4em;
-  }
-
-  .details {
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: justify;
-    justify-content: center;
-    font-size: 0.6em;
-  }
-
-  .summary {
-    font-size: 1.2em;
-    padding: 20px;
-  }
-
-  .subtitutoFaq {
-    left: 6em;
-  }
-
+@media (max-width: 760px) {
+  .details,
+  .summary,
   .pergunta {
-    max-width: 200px;
-} 
-} */
-
-@media (max-width: 600px) {
-  .details, .summary, .pergunta {
     font-size: 1em;
-    padding: 10px;
   }
 
   .containerFAQ {
     margin: auto;
-    height: 250px;
+    height: auto;
     background-image: none;
     background-color: #ffe1c6;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
+    align-items: center;
     color: #c86710;
   }
 
@@ -254,23 +131,19 @@
 
   .subtituloFAQ {
     text-transform: uppercase;
-    text-align: center;
-    font-size: 0.9em;
+    text-align: left;
+    font-size: 1em;
     font-weight: 500;
   }
 
   .paragrafoFAQ {
-    padding: 10px;
     font-size: 0.7em;
     text-align: center;
     font-weight: 500;
-    left: 4em;
   }
 
   .details {
-    margin-bottom: 1rem;
     border-bottom: 1px solid #ddd;
-    padding: 10px;
     border-radius: 5px;
     text-align: justify;
     justify-content: center;
@@ -279,27 +152,95 @@
 
   .summary {
     font-size: 1.2em;
-    padding: 20px;
   }
 
-  .cabecalhoFAQ{
+  .cabecalhoFAQ {
     text-align: center;
-    font-size: 1.2em;
     width: 100%;
   }
 
   .pergunta {
     max-width: 100%;
     text-align: left;
-    padding: 10px;
-} 
+  }
 
-.secao_FAQ {
-  box-sizing: border-box;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  width: 100%;
+  .secao_FAQ {
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .cabecalhoFAQ>div{
+    width: 100%;
+    align-items: center;
+  }
+
+  .containerFAQ>div{
+    width: 100%;
+    margin: auto;
+  }
 }
 
+@media (max-width: 1280px) {
+
+  .containerFAQ {
+    margin: auto;
+    height: auto;
+    background-image: none;
+    background-color: #ffe1c6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #c86710;
+    padding: 50px;
+  }
+
+  .perguntas {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .subtituloFAQ {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .paragrafoFAQ {
+    padding: 10px;
+    font-size: 0.7em;
+    font-weight: 500;
+    text-align: left;
+    width: 55%;
+  }
+
+  .details {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    justify-content: center;
+    font-size: 0.8em;
+  }
+
+  .cabecalhoFAQ {
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  .pergunta {
+    padding: 20px;
+  }
+
+  .cabecalhoFAQ>div{
+    width: 70%;
+    align-items: center;
+    text-align: left;
+  }
 }
